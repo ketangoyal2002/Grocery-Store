@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BigBazaar Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style5.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<script type="text/javascript" src="js/jquery3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<nav class="navbar header">
+  		<div class="container-fluid">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+				<i class="fa fa-bars" style="color: white; font-size: 22px; margin-top: 0px;"></i>
+			</button>
+    		<div class="navbar-header">
+     			<a class="navbar-brand" href="homepage.html"><i class="fa fa-shopping-basket"></i>BigBazaar</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="mymenu">
+    			<ul class="nav navbar-nav text-center">
+      				<li><a href="homepage.html">HOME</a></li>
+        			<li><a href="shop.html">SHOP</a></li>
+        			<li><a href="aboutus.html">ABOUT US</a></li>
+        			<!-- <li><a href="review.html">REVIEW</a></li> -->
+        			<li><a href="blog.html">BLOG</a></li>
+        			<li><a href="contact.html">CONTACT</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right text-center rightbtns">
+      				<i id="search-btn" class="fa fa-search"></i>
+        			<i id="cart-btn" class="fa fa-shopping-cart"></i>
+        			<i id="login-btn" class="fa fa-user"></i>
+    			</ul>
+    		</div>
+    		<form action="" class="search-form">
+	        	<input type="search" placeholder="search here..." id="search-box">
+    	    	<label for="search-box" class="fa fa-search"></label>
+    		</form>
+    		<div class="shopping-cart">
+        <div class="boxe">
+            <i class="fa fa-times"></i>
+            <img src="images/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>Spinach</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="boxe">
+            <i class="fa fa-times"></i>
+            <img src="images/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>Milk</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="boxe">
+            <i class="fa fa-times"></i>
+            <img src="images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>Whole Grain</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <h3 class="total"> Total : <span>56.97</span> </h3>
+        <a href="checkout.html" class="btn" style="border: 1px solid black; border-radius: .5rem; color: black; font-weight: bold; transition: .5s;">CHECKOUT</a>
+    </div>
+    <form action="login.html" method="get" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="Enter your email" class="box" name="Email">
+        <input type="password" placeholder="Enter your password" class="box" name="Password">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <a href="login.html"><input type="submit" value="Login now" class="btn"></a>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+  		</div>
+	</nav>
+
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 firstdiv">
+		<p><a href="homepage.html">HOME</a>&gt;&gt;<a href="aboutus.html">BLOG</a></p>
+		<br><br><br><br><br>
+		<div class="col-md-offset-1 col-md-1"></div>
+		<span>BLOG</span>
+	</div>
+
+	<div class="col-md-12 seconddiv">
+		<div class="container" style="border-top: 2.5px solid black; padding: 0px;">
+			<div class="col-md-8">
+				<h1>Beauty Tips</h1>
+				<img src="images/blog2.webp">
+				<br>
+				<div class="reveal">
+				<h2>Change in regime : from Winter to Spring</h2>
+				<p>Spring has sprung! As winter takes a backseat and the sun comes out to play, it’s time to load upContinue Reading</p><br><br>
+				<span>IF YOU LIKE THIS POST, A SHARE WOULD BE EPIC!</span><br>
+				<i class="fa fa-facebook-square fa-fw"></i>
+				<i class="fa fa-twitter-square fa-fw"></i>
+				<i class="fa fa-instagram fa-fw"></i>
+				<i class="fa fa-pinterest-square fa-fw"></i>
+				<i class="fa fa-linkedin-square fa-fw"></i>
+				<i class="fa fa-whatsapp fa-fw"></i>
+				<i class="fa fa-telegram fa-fw"></i>
+				<br><br>
+				<span style="font-size: 12px;">BY BIGBAZAAR | 5 MARCH 2022  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comments fa-fw" style="font-size: 16px;">0</i></span>
+				</div>
+			</div>			
+			<div class="col-md-4" style="padding-right: 0;">
+				<h3>SEE ALL POSTS&nbsp;&nbsp;<i class="fa fa-arrow-right" style="font-size: 13px; font-weight: 300;"></i></h3>
+				<img src="images/blog3.webp">
+				<span style="font-size: 12px;">THE BEAUTY STORE</span>
+				<h2 style="font-size: 28px; line-height: 35px;">Have a question on skin care? ASK OUR EXPERTS</h2>
+				<div class="reveal">
+				<div class="col-md-6 text-center" style="padding: 10px; padding-top: 15px;">
+					<img src="images/blog4.webp" width="100%" style="border-top: 2px solid black; padding-top: 25px;">
+					<h2 style="font-size: 14px; margin-top: 0px; text-align: justify;">Dramatic blue smoke eye makeup for ocassion</h2>
+				</div>
+				<div class="col-md-6 text-center" style="padding: 10px; padding-top: 15px;">
+					<img src="images/blog5.webp" width="100%" style="border-top: 2px solid black; padding-top: 25px;">
+					<h2 style="font-size: 14px; margin-top: 0px; text-align: justify;">Top 5 looks of Flimfare 2019</h2>
+				</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 thirddiv">
+		<div class="container reveal">
+			<div class="col-md-12 upperdiv">
+				<div class="col-md-6">
+					<h1>HEALTHY YOU</h1>
+				</div>
+				<div class="col-md-6 text-right">
+					<span>SEE ALL POSTS</span>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12 lowerdiv">
+				<div class="col-md-6">
+					<h1>Ways to get your baby to sleep through the night</h1>
+					<p>The constant nightmare of any new parent is their newborn not sleeping through the night. A newborn baby’s need forContinue Reading</p><br><br>
+					<span>IF YOU LIKE THIS POST, A SHARE WOULD BE EPIC!</span><br>
+					<i class="fa fa-facebook-square fa-fw"></i>
+					<i class="fa fa-twitter-square fa-fw"></i>
+					<i class="fa fa-instagram fa-fw"></i>
+					<i class="fa fa-pinterest-square fa-fw"></i>
+					<i class="fa fa-linkedin-square fa-fw"></i>
+					<i class="fa fa-whatsapp fa-fw"></i>
+					<i class="fa fa-telegram fa-fw"></i>
+					<br><br>
+					<span style="font-size: 12px;">BY BIGBAZAAR | 5 MARCH 2022  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-comments fa-fw" style="font-size: 16px;">0</i></span>
+				</div>
+				<div class="col-md-6" style="padding: 25px; padding-right: 0; padding-top: 35px;">
+					<img src="images/blog6.webp" width="100%">
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-3 minidiv">
+				<div class="col-md-6">
+					<img src="images/blog7.webp" width="100%">
+				</div>
+				<div class="col-md-6">
+					<p>Best low-exercise everyone need to do them</p>
+				</div>
+			</div>
+			<div class="col-md-3 minidiv">
+				<div class="col-md-6">
+					<img src="images/blog8.webp" width="100%">
+				</div>
+				<div class="col-md-6">
+					<p>Things to should know about breast feeding</p>
+				</div>
+			</div>
+			<div class="col-md-3 minidiv">
+				<div class="col-md-6">
+					<img src="images/blog9.webp" width="100%">
+				</div>
+				<div class="col-md-6">
+					<p>10 items to eat to control hu blood sugar</p>
+				</div>
+			</div>
+			<div class="col-md-3 minidiv">
+				<div class="col-md-6">
+					<img src="images/blog10.webp" width="100%">
+				</div>
+				<div class="col-md-6">
+					<p>Best low-exercise everyone need to do them</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 maindiv">
+		<div class="container">	
+			<div class="col-md-12 upperdiv">
+				<div class="col-md-6">
+					<h1>FASHION BLOGS</h1>
+				</div>
+				<div class="col-md-6 text-right">
+					<span>SEE ALL POSTS</span>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6 reveal">
+			<div class="boximg">
+				<img src="images/Schermata-2021-07-06-alle-10.57.13-copia.jpg">
+			</div>
+			<span style="color:black; font-family: Times New Roman; font-size: 25px; margin-left: 4px;">Photo Vogue Italia</span>
+			<span style="color: darkgray; font-size: 18px; font-family: Calibri;">Myriam on Photo Vogue 14/06/2021</span>
+		</div>
+		<div class="col-md-6 reveal">
+			<div class="boximg">
+				<img src="images/HAUTE-SPRING_spread-scaled.jpg">
+			</div>
+			<span style="color:black; font-family: Times New Roman; font-size: 25px; margin-left: 4px;">Know Magazine</span>
+			<span style="color: darkgray; font-size: 18px; font-family: Calibri;">Red Spring on HAUTE SPRING! – March 24, 2021</span>
+		</div>
+		<div class="col-md-6 reveal">
+			<div class="boximg">
+				<img src="images/Schermata-2021-02-21-alle-11.11.19.png">
+			</div>
+			<span style="color:black; font-family: Times New Roman; font-size: 25px; margin-left: 4px;">OOSMA Magazine</span>
+			<span style="color: darkgray; font-size: 18px; font-family: Calibri;">Futuristic Lights on OSSMA Magazine </span>
+		</div>
+		<div class="col-md-6 reveal">
+			<div class="boximg">
+				<img src="images/Schermata-2021-02-22-alle-10.24.15.png">
+			</div>
+			<span style="color:black; font-family: Times New Roman; font-size: 25px; margin-left: 4px;">EDITH Magazine</span>
+			<span style="color: darkgray; font-size: 18px; font-family: Calibri;">February 2021, Issue #272</span>
+		</div>
+		<div class="col-md-6 reveal">
+			<div class="boximg">
+				<img src="images/Schermata-2020-12-20-alle-18.34.10.png">
+			</div>
+			<span style="color:black; font-family: Times New Roman; font-size: 25px; margin-left: 4px;">EDITH Magazine</span>
+			<span style="color: darkgray; font-size: 18px; font-family: Calibri;">February 2021, Issue #272</span>
+		</div>
+		<div class="col-md-6 reveal">
+			<div class="boximg">
+				<img src="images/VOLUME-ONE_ISSUE-524.jpg">
+			</div>
+			<span style="color:black; font-family: Times New Roman; font-size: 25px; margin-left: 4px;">EDITH Magazine</span>
+			<span style="color: darkgray; font-size: 18px; font-family: Calibri;">February 2021, Issue #272</span>
+		</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 footer">
+		<div class="container">
+		<div class="col-md-3">
+			<p>Links</p>
+			
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Home</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Shop</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Blog</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Review</span>
+		</div>
+		<div class="col-md-3">
+			<p>Useful Reads</p>
+			
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>About Us</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Privacy and Policy</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Terms and Conditions</span>
+		</div>
+		<div class="col-md-3">
+			<p>Connect with Us</p>
+			<ul>
+			
+			<li><a href="" target="_blank"><i class="fa fa-facebook fa-fw"></i> Facebook</a></li>
+			<li><a href="" target="_blank"><i class="fa fa-instagram fa-fw"></i> Instagram</a></li>
+			<li><a href="" target="_blank"><i class="fa fa-pinterest-p fa-fw"></i> Pinterest</a></li>
+			<li><a href="" target="_blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+			<li><a href="" target="_blank"><i class="fa fa-youtube-play fa-fw"></i> Youtube</a></li>
+			<li><a href="" target="_blank"><i class="fa fa-rss fa-fw"></i> Blog</a></li>
+			<li><a href=""><i class="fa fa-envelope fa-fw"></i> bigbazaar.in@gmail.com</a></li>
+		</ul>
+		</div>
+		<div class="col-md-3 lastdiv text-center">
+			<br>
+     		<a href="homepage.html"><i class="fa fa-shopping-basket"></i>BigBazaar</a><br><br>
+			<p>Download App</p>
+			<p class="appleimg"><a href="https://apps.apple.com/us/app/cashpromise/id1601621938" target="_blank">
+				<img src="images/iphone-app.png" width="120" alt="cashpromise app"></a></p>
+			<p><img src="images/payment.png" width="100%"></p>
+		</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 footer2">
+		<p>Created By Ketan Goyal | All Rights Reserved</p>
+	</div>
+
+	<script type="text/javascript">
+		function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+	</script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

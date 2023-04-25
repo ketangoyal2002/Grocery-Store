@@ -1,0 +1,365 @@
+1)Hoop On Loop
+
+
+#include <iostream>
+using namespace std;
+
+void maxLoop(int **arr,int **vis,int i,int j,int m,int n,int currCnt,int &count){
+    if(i<0 || j<0 || i>=m || j>=n){
+        return;
+    }
+    if(arr[i][j]==0){
+        return;
+    }
+    if(vis[i][j]==1){
+        count=max(count,currCnt);
+        return;
+    }
+    vis[i][j]=1;
+    maxLoop(arr,vis,i+1,j,m,n,currCnt+1,count);
+    maxLoop(arr,vis,i-1,j,m,n,currCnt+1,count);
+    maxLoop(arr,vis,i,j+1,m,n,currCnt+1,count);
+    maxLoop(arr,vis,i,j-1,m,n,currCnt+1,count);
+    vis[i][j]=0;
+}
+
+int main()
+{
+    int m;
+    int n;
+    cin>>m>>n;
+    int **arr=new int *[m];
+    for(int i=0;i<m;i++){
+        arr[i]=new int[n];
+        for(int j=0;j<n;j++){
+            cin>>arr[i][j];
+ }
+    }
+    
+    int **vis=new int*[m];
+    for(int i=0;i<m;i++){
+        vis[i]=new int[n];
+        for(int j=0;j<n;j++){
+            vis[i][j]=0;
+        }
+    }
+    
+    
+    int fAns = 0;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(arr[i][j]==1){
+                maxLoop(arr,vis,i,j,m,n,0,fAns);
+            }
+        }
+    }
+    cout<<fAns<<endl;
+    return 0;
+}
+
+
+
+2)  Count Pages
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void totalsubseq(int arr[], int index, vector<int> &subarr,int n, int x, int &total){
+    
+    if (index == n){
+        if(subarr.size() == 0){
+            return;
+        }
+        int sum = 1;
+        for (auto it:subarr){
+            sum *= it;
+        }
+        if(sum <= x){
+            total++;
+        }
+        return;
+    }
+    else{
+        subarr.push_back(arr[index]);
+         totalsubseq(arr, index + 1, subarr,n, x, total);
+        subarr.pop_back();
+        totalsubseq(arr, index + 1, subarr,n, x, total);
+    }
+    
+}
+
+
+
+
+// Driver Code
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--){
+        int n, x;
+        cin>>n>>x;
+        
+        int arr[n];
+        for(int i=0; i<n; i++){
+            cin>>arr[i];
+        }
+        
+        int total = 0;
+        vector<int> vec;
+        totalsubseq(arr, 0, vec, n, x, total);
+        
+        cout << total;
+    }
+ 
+    return 0;
+}
+
+
+
+3) Greedy Florist
+
+
+#include <bits/stdc++.h>
+#include <string>
+#include <list>
+using namespace std;
+int arr[102];
+int main()
+{
+    int i,j,m,n;
+    long long c,ans=0;
+    cin>>n>>m;
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    sort(arr,arr+n);
+    for(i=n-1,c=0,j=0;i>=0;--i)
+    {
+        if(j==0)
+        {
+            ++c;
+        }
+        ans+=c*arr[i];
+        if(++j==m)
+        {
+            j=0;
+        }
+    }
+    cout<<ans<<endl;
+    return 0;
+}
+
+
+
+4)Kittu's Beautiful Number
+
+#include <iostream>
+#include <string>
+#include <list>
+using namespace std;
+
+bool findDigit (int N, int D)
+{
+
+    while (N>0)
+    { 
+        int a=N%10; 
+        if(a==D)
+        {
+            return true;
+        } 
+        N=N/10;
+    }
+    return false;
+}
+bool check (int n,int d)
+{ 
+    while(n>0)
+    { 
+        if(findDigit (n, d) == true) 
+        {
+            return true;
+        }
+        n-=d;
+    }
+    return false;
+}
+
+int main() 
+{
+    int t; 
+    cin>>t; 
+    while(t--)
+    {
+        int n, d;
+        cin>>n>>d; 
+        int arr[n]; 
+        for(int i=0;i<n;i++)
+        { 
+            cin>>arr [i];
+        }
+        for(int i=0; i<n; i++)
+        { 
+            if(check(arr[i],d))
+            {
+                cout<<" YES"<<endl;
+            }
+            else
+            {
+                cout<< "NO"<<endl;    
+            } 
+        }
+    }
+    return 0;
+}
+
+
+5) 4 Divisor
+
+
+#include<bits/stdc++.h>
+#define ll long long int
+using namespace std;
+int main()
+{
+     ll t;
+     cin>>t;
+     while(t--)
+     {
+          ll n;
+          cin>>n;
+          vector<ll>a;
+          for(ll i=n+1; ;i++)
+          {
+               bool find = true;
+               for(ll j=2;j*j<=i;j++)
+               {
+                    if(i%j==0)
+                    {
+                         find=false;
+                         break;
+                    }
+               }
+               
+               if(find)
+               {
+                    a.push_back(i);
+                    break;
+               }
+          }
+ for(ll i= a.back()+n;;i++)
+          {
+               bool find = true;
+               for(ll j=2;j*j<=i;j++)
+               {
+                    if(i%j==0)
+                    {
+                         find=false;
+                         break;
+                    }
+               }
+               
+               if(find)
+               {
+                    a.push_back(i);
+                    break;
+               }
+          }
+          
+          cout<<min(a[0]*a[1],a[0]*a[0]*a[0])<<endl;
+    }
+}
+
+
+6) Medicine Vala
+
+#include<iostream>
+#include<string>
+#include<list>
+#include<climits>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    
+    int ans[6];
+    
+    for(int i=0;i<6;i++)
+    {
+        ans[i]=0;
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        ans[arr[i]]++;
+    }
+    
+    int index =-1;
+    int maxi = INT_MIN;
+    for(int i=0;i<6;i++)
+    {
+        if(maxi <ans[i])
+        {
+            index =i;
+            maxi=ans[i];
+        }
+    }
+    
+    cout<<index<<endl;
+    
+    return 0;
+}
+
+
+
+7)Triplet 3
+
+#include <bits/stdc++.h>
+using namespace std;
+const unsigned int mod = 1000000007;
+ 
+// Function to count the
+// total number of possible triplets
+long long int solve(int N, int M, int P)
+{
+    int nums[] = { N, M, P };
+    sort(nums, nums + 3);
+    long long int ans = ((nums[0] *
+                         (nums[1] - 1)) % mod
+                         * (nums[2] - 2) %
+                         mod)% mod;
+    return ans;
+}
+ 
+// Driver code
+int main()
+{
+    
+    int t;
+    cin>>t;
+    int N,M,P;
+    while(t--)
+    {
+        cin>>N;
+        cin>>M;
+        cin>>P;
+        long long int ans = solve(N, M, P);
+        cout << ans << endl;
+        
+    }
+    return 0;
+}
+
+
+8)
+
+

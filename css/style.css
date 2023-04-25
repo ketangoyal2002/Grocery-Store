@@ -1,0 +1,141 @@
+.navbar{
+	background-color: #669900;
+	max-width: 100%;
+	padding: 2px;
+	padding-right: 5px;
+	border-radius: 0;
+	margin-bottom: 0;
+	/*z-index: 1.1;*/
+}
+.navbar ul li a{
+	color: white;
+	font-size: 14px;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+.navbar ul li a:hover{
+	color: yellow;
+	background: none;
+	transition: 0.2s;
+}
+.navbar-header a{
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+	/*margin-left: 10px;*/
+	font-family: Arial Rounded MT Bold;
+}
+.navbar-header i{
+	color: white;
+	font-size: 21px;
+	margin-right: 5px;
+}
+.rightbtns i{
+	color: white;
+	font-size: 19px;
+	margin-top: 17px;
+	margin-right: 18px;
+	/*cursor: pointer;*/
+}
+.rightbtns i:hover{
+	color: yellow;
+	background: none;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.firstdiv{
+	padding: 0;
+	/*background-image: url(../images/5.jpg);
+	height: 600px;
+	background-size: cover;*/
+	/*position: absolute;*/
+	/*background-repeat: no-repeat;*/
+	overflow: hidden;
+}
+/*.firstdiv img{
+	width: 100%;
+	height: 250px;	
+}*/
+.carousel-inner .item img{
+	width: 100%;
+	height: 500px;
+}
+#mycarousel{
+	position: relative;
+}
+
+.footer{
+	padding: 35px;
+	background: #E5ECEC;
+	margin-top: 50px;
+	font-size: 16px;
+	font-family: 'OpenSans-Regular';
+	color: black;
+}
+.footer span{
+	cursor: pointer;
+}
+.footer span:hover{
+	color: #669900;
+}
+.footer i{
+	color: #669900;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right: 10px;
+}
+.footer p{
+	letter-spacing: 1px; 
+	font-size: 18px; 
+	font-family: Calibri;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+.footer ul{ 
+	padding-left: 0; 
+	font-size: 13px;
+}
+.footer ul li{
+	list-style: none;
+}
+.footer ul li a{
+	color:black;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	text-decoration: none;
+}
+.footer ul li a:hover{
+	color: #669900;
+}
+.footer .copy{
+	margin-top: 25px;
+	background: #333333;
+	text-align: center;
+	padding: 15px;
+	font-size: 13px;
+}
+.lastdiv a{
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	/*margin-left: 10px;*/
+	font-family: Arial Rounded MT Bold;
+	letter-spacing: 1px;
+}
+.lastdiv a i{
+	color: #669900;
+	font-size: 45px;
+}
+.footer2{
+	background-color: #669900;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	font-family: Calibri;
+	letter-spacing: 2px;
+	padding: 10px;
+	padding-top: 17px;
+	text-transform: uppercase;
+}

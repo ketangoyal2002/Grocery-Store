@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grocery Store</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/products.css">
+	<script type="text/javascript" src="js/jquery3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+	<nav class="navbar header">
+  		<div class="container-fluid">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+				<i class="fa fa-bars" style="color: white; font-size: 22px; margin-top: 0px;"></i>
+			</button>
+    		<div class="navbar-header">
+     			<a class="navbar-brand" href="homepage.html"><i class="fa fa-shopping-basket"></i>BigBazaar</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="mymenu">
+    			<ul class="nav navbar-nav text-center">
+      				<li><a href="homepage.html">HOME</a></li>
+        			<li><a href="shop.html">SHOP</a></li>
+        			<li><a href="aboutus.html">ABOUT US</a></li>
+        			<!-- <li><a href="review.html">REVIEW</a></li> -->
+        			<li><a href="blog.html">BLOG</a></li>
+        			<li><a href="contact.html">CONTACT</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right text-center rightbtns">
+      				<i id="search-btn" class="fa fa-search"></i>
+        			<i id="cart-btn" class="fa fa-shopping-cart"></i>
+        			<i id="login-btn" class="fa fa-user"></i>
+    			</ul>
+    		</div>
+    		<form action="" class="search-form">
+	        	<input type="search" placeholder="search here..." id="search-box">
+    	    	<label for="search-box" class="fa fa-search"></label>
+    		</form>
+    		<div class="shopping-cart">
+        <div class="boxe">
+            <i class="fa fa-times"></i>
+            <img src="images/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>Spinach</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="boxe">
+            <i class="fa fa-times"></i>
+            <img src="images/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>Milk</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="boxe">
+            <i class="fa fa-times"></i>
+            <img src="images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>Whole Grain</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <h3 class="total"> Total : <span>56.97</span> </h3>
+        <a href="checkout.html" class="btn" style="border: 1px solid black; border-radius: .5rem; color: black; font-weight: bold; transition: .5s;">CHECKOUT</a>
+    </div>
+    <form action="login.html" method="get" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="Enter your email" class="box" name="Email">
+        <input type="password" placeholder="Enter your password" class="box" name="Password">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <a href="login.html"><input type="submit" value="Login now" class="btn"></a>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+
+  		</div>
+	</nav>
+
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 firstdiv">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  			<ol class="carousel-indicators">
+    			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    			<li data-target="#myCarousel" data-slide-to="1"></li>
+    			<li data-target="#myCarousel" data-slide-to="2"></li>
+  			</ol>
+
+  			<div class="carousel-inner">
+    			<div class="item active">
+      				<img src="images/5.jpg" >
+    			</div>
+
+    			<div class="item">
+      				<img src="images/2.jpg">
+    			</div>
+    			<div class="item">
+      				<img src="images/6.webp" >
+    			</div>
+  			</div>
+
+  			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+   			 	<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="col-md-12" style="padding-top: 55px; padding-bottom: 55px;">
+		<div class="container">
+			<section class="products">
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Banana</h3>
+                <div class="price">$18.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pumpkin</h3>
+                <div class="price">$15.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Fresh Meat</h3>
+                <div class="price">$24.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Fresh Milk</h3>
+                <div class="price">$9.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Whole Grain</h3>
+                <div class="price">$7.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pomengranate</h3>
+                <div class="price">$3.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Fresh Beetroot</h3>
+                <div class="price">$6.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Fresh Fish</h3>
+                <div class="price">$12.99</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+		</div>
+	</div>	
+
+
+	<div class="col-md-12 footer">
+		<div class="container">
+		<div class="col-md-3">
+			<p>Links</p>
+			
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Home</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Shop</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Blog</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Review</span>
+		</div>
+		<div class="col-md-3">
+			<p>Useful Reads</p>
+			
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>About Us</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Privacy and Policy</span>
+			<br>
+			<i class="fa fa-angle-right" aria-hidden="true"></i><span>Terms and Conditions</span>
+		</div>
+		<div class="col-md-3">
+			<p>Connect with Us</p>
+			<ul>
+			
+			<li><a href="https://www.facbook.com" target="_blank"><i class="fa fa-facebook fa-fw"></i> Facebook</a></li>
+			<li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-fw"></i> Instagram</a></li>
+			<li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-p fa-fw"></i> Pinterest</a></li>
+			<li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+			<li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play fa-fw"></i> Youtube</a></li>
+			<li><a href="bolg.html" target="_blank"><i class="fa fa-rss fa-fw"></i> Blog</a></li>
+		</ul>
+		</div>
+		<div class="col-md-3 lastdiv text-center">
+			<br>
+     		<a href="homepage.html"><i class="fa fa-shopping-basket"></i>BigBazaar</a><br><br>
+			<p>Download App</p>
+			<p class="appleimg"><a href="https://apps.apple.com/us/app/cashpromise/id1601621938" target="_blank"><img src="images/iphone-app.png" width="120" alt="cashpromise app"></a></p>
+			<p><img src="images/payment.png" width="100%"></p>
+	
+		</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="col-md-12 footer2">
+		<p>Created By Ketan Goyal | All Rights Reserved</p>
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
